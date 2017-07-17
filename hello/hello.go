@@ -1,15 +1,11 @@
-/*hello.go - My first Golang program */
 package main
 
 import (
 	"fmt"
+
+	"github.com/meghapatel1992/hellogo/stringutil"
 )
 
 func main() {
-	n, err := fmt.Printf("Hello, megha\n")
-	fmt.Printf("%d %e", n, err)
-	if err == nil {
-		fmt.Printf("err is null")
-	}
-
+	fmt.Printf(stringutil.Reverse("hey.. shruti"))
 }
